@@ -1,0 +1,36 @@
+{
+  "name": "@oipage/testjs",
+  "version": "0.1.0-alpha.0",
+  "description": "可视化前端测试库，包括单元测试、性能测试、内存监控等，支持浏览器、Nodejs等环境",
+  "main": "./dist/test.min.js",
+  "typings": "./types/index.d.ts",
+  "scripts": {
+    "start": "npm install && npm run dev",
+    "dev": "oipage-cli run \"rollup --config ./rollup.config.js -w\" \"oipage-cli serve -p 20000\"",
+    "build": "rollup --config ./rollup.config.js && terser ./dist/test.js --compress --mangle --output ./dist/test.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oi-contrib/oipage-testjs.git"
+  },
+  "author": {
+    "name": "zxl20070701",
+    "url": "https://zxl20070701.github.io/notebook/home.html"
+  },
+  "keywords": [
+    "oipage",
+    "browser",
+    "javascript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^4.6.1",
+    "terser": "^5.17.1"
+  },
+  "dependencies": {
+    "oipage": "^1.6.1",
+    "vislite": "^1.7.0"
+  }
+}
