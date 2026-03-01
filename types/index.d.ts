@@ -1,17 +1,18 @@
-export * from "./UnitTest"
+import { ExpectType } from "./ExpectType"
+import { UnitLifecycleType } from "./UnitLifecycleType"
 
-import { UnitTestInstance } from "./UnitTest"
+export class Unit extends ExpectType {
+    constructor(option?: {
+        lifecycle?: UnitLifecycleType
+    })
 
-/**
- * Web环境下的单元测试函数
- */
-export interface unit_web {
-    (): UnitTestInstance
-}
+    /**
+     * Node环境下的单元测试函数
+     */
+    node(): ExpectType
 
-/**
- * Node环境下的单元测试函数
- */
-export interface unit_node {
-    (): UnitTestInstance
+    /**
+     * Web环境下的单元测试函数
+     */
+    web(): ExpectType
 }

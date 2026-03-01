@@ -3,3 +3,13 @@ v0.1.0:
     changes:
       - 初始化版本
         1、单元测试
+          * 若干断言方法
+          （toBe、toEqual、toBeTruthy等）
+          * 支持否定断言
+          （not）
+          * 测试套件（describe）和测试用例（it）的基本结构
+          * 生命周期钩子
+          （beforeAll, beforeEach, beforeItem, afterItem, afterEach）
+          * 测试执行结果统计
+          * 可视化测试界面
+          * 支持浏览器和Node.js双环境

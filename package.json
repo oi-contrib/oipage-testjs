@@ -26,11 +26,11 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
+    "oipage": "^1.6.1",
     "rollup": "^4.6.1",
     "terser": "^5.17.1"
   },
   "dependencies": {
-    "oipage": "^1.6.1",
     "vislite": "^1.7.0"
   }
 }

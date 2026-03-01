@@ -1,7 +1,7 @@
 import mergeOption from "vislite/lib/mergeOption/index.es.js"
-import Expect from "./tools/expect.js"
+import Expect from "./expect.js"
 
-// 单元测试运行
+// 单元测试核心模块
 export default class Unit {
 
     describe_index = 0 // 当前测试套件索引
@@ -31,7 +31,7 @@ export default class Unit {
                 name,
                 index: this.describe_index
             }
-        });
+        })
         this.describe_total = 0
         this.describe_failed = 0
         this.it_index = 0
@@ -55,7 +55,7 @@ export default class Unit {
                 name,
                 index: this.it_index
             }
-        });
+        })
 
         this.describe_total++
 

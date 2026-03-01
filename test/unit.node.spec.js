@@ -1,6 +1,6 @@
-const { unit_node } = require('../dist/test.js')
+const { Unit } = require('../dist/test.js')
 
-let { describe, it, expect } = unit_node()
+let { describe, it, expect } = Unit.node()
 
 describe("测试加法运算", () => {
 
