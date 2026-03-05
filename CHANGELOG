@@ -20,3 +20,10 @@ v0.1.0:
           （beforeAll, beforeItem, afterItem）
           * 可视化测试界面
           * 支持浏览器和Node.js双环境
+        3、内存监控
+          * 监控内存变化
+          （monitor）
+          * 生命周期钩子
+          （beforeAll, beforeItem, afterItem）
+          * 可视化测试界面
+          * 支持浏览器和Node.js双环境

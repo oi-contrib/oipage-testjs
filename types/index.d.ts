@@ -1,6 +1,7 @@
 import { ExpectType } from "./ExpectType"
 import { UnitLifecycleType } from "./UnitLifecycleType"
 import { PerformanceLifecycleType } from "./PerformanceLifecycleType"
+import { MemoryLifecycleType } from "./MemoryLifecycleType"
 
 export class Unit extends ExpectType {
     constructor(option?: {
@@ -40,4 +41,27 @@ export class Performance {
      * Web环境下的性能测试函数
      */
     web(): Performance
+}
+
+export class Memory {
+    constructor(option?: {
+        lifecycle?: MemoryLifecycleType
+    })
+
+    /**
+     * 监控函数执行期间的内存变化
+     * @param name 测试名称
+     * @param fn 测试函数
+     */
+    monitor(name: string, fn: () => void): void
+
+    /**
+     * Node环境下的内存测试函数
+     */
+    node(): Memory
+
+    /**
+     * Web环境下的内存测试函数
+     */
+    web(): Memory
 }

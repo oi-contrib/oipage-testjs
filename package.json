@@ -1,6 +1,6 @@
 {
   "name": "@oipage/testjs",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "description": "可视化前端测试库，包括单元测试、性能测试、内存监控等，支持浏览器、Nodejs等环境",
   "main": "./dist/test.min.js",
   "typings": "./types/index.d.ts",
@@ -26,11 +26,11 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
-    "oipage": "^1.6.1",
+    "oipage": "^1.9.0",
     "rollup": "^4.6.1",
     "terser": "^5.17.1"
   },
   "dependencies": {
-    "vislite": "^1.7.0"
+    "vislite": "^1.9.1"
   }
 }
